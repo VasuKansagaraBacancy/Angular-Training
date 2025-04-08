@@ -6,7 +6,6 @@ function addTodo() {
         alert("Please enter a task!");
         return;
     }
-
     const li = document.createElement("li");
     li.className = "todo-item";
 

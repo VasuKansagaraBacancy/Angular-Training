@@ -87,3 +87,10 @@ button:hover {
 .actions button:nth-child(1):hover {
     background:#1e7e34;
 }
+
+.text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 200px;
+    white-space: normal;
+}

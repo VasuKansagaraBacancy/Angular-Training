@@ -80,6 +80,7 @@ button:hover {
 .actions button:nth-child(2):hover {
     background: #a71d2a;
 }
+
 .actions button:nth-child(1) {
     background:#28a745;
 }

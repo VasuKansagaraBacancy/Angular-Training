@@ -22,7 +22,7 @@ function addTodo() {
         li.classList.toggle("done");
         doneBtn.innerText = li.classList.contains("done") ? "Undone" : "Done";
     };
-
+    
     const removeBtn = document.createElement("button");
     removeBtn.innerText = "Remove";
     removeBtn.onclick = () => {

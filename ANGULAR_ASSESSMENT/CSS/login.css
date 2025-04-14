@@ -67,3 +67,62 @@ button:hover {
     margin-top: 10px;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px 20px;
+        margin: 20px;
+        max-width: 90%;
+    }
+
+    .login-container h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #errorMsg {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .login-container {
+        padding: 25px 15px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #errorMsg {
+        font-size: 13px;
+    }
+}

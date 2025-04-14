@@ -190,6 +190,76 @@ main {
     background: #ffe6e6;
 } 
 
+body.dark-theme {
+    background: #1e1e2f;
+    color: #f0f0f0;
+}
+
+.dark-theme header {
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: #f0f0f0;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme .login-container,
+.dark-theme .blog-post,
+.dark-theme .comment,
+.dark-theme .comment-box textarea {
+    background: #2c2c3e;
+    color: #f0f0f0;
+    border-color: #444;
+    box-shadow: none;
+}
+
+.dark-theme .blog-post h3,
+.dark-theme .comment-content {
+    color: #fff;
+}
+
+.dark-theme .comment-box textarea:focus {
+    border-color: #6a89cc;
+    box-shadow: 0 0 6px rgba(106, 137, 204, 0.3);
+}
+
+.dark-theme .comment-box button {
+    background: #45aaf2;
+}
+
+.dark-theme .comment-box button:hover {
+    background: #2d98da;
+}
+
+.dark-theme .edit-btn {
+    color: #74b9ff;
+}
+
+.dark-theme .edit-btn:hover {
+    background: #1e272e;
+}
+
+.dark-theme .delete-btn {
+    color: #ff7675;
+}
+
+.dark-theme .delete-btn:hover {
+    background: #2d3436;
+}
+
+.dark-theme .comment-content[contenteditable="true"] {
+    background: #39395c;
+    border: 1px dashed #666;
+}
+
+.dark-theme .comment-count {
+    background: #d63031;
+    color: white;
+}
+.header-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+} 
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;

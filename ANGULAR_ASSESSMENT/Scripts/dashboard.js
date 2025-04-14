@@ -92,3 +92,17 @@ function enableEdit(blogIndex, commentIndex) {
     };
 
 }
+const toggleButton = document.getElementById('themeToggle');
+const body = document.body;
+
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-theme');
+  toggleButton.textContent = '☀️ Light Mode';
+}
+
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-theme');
+  const isDark = body.classList.contains('dark-theme');
+  toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});

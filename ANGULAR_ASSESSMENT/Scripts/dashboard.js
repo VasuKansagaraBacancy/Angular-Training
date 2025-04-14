@@ -42,8 +42,6 @@ blogs.forEach((post, index) => {
     </div>
   `).join("")}
 </div>
-
-
   `;
 
     container.appendChild(div);
@@ -62,12 +60,6 @@ function addComment(blogIndex) {
 
     localStorage.setItem("blogs", JSON.stringify(blogs));
     window.location.reload();
-}
-
-function editComment(blogIndex, commentIndex, newText) {
-    const blogs = JSON.parse(localStorage.getItem("blogs"));
-    blogs[blogIndex].comments[commentIndex].content = newText;
-    localStorage.setItem("blogs", JSON.stringify(blogs));
 }
 
 function deleteComment(blogIndex, commentIndex) {

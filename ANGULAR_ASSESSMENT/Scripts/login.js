@@ -1,3 +1,7 @@
+const user = JSON.parse(localStorage.getItem("loggedInUser"));
+if (user) {
+    window.location.href = "../Pages/dashboard.html";
+} 
 document.getElementById("loginForm").addEventListener("submit", function (e) {
     e.preventDefault();
     const email = document.getElementById("email").value.trim();

@@ -1,6 +1,6 @@
 const user = JSON.parse(localStorage.getItem("loggedInUser"));
 if (!user) {
-    window.location.href = "../login/index.html";
+    window.location.href = "../Pages/index.html";
 }
 
 document.getElementById("userName").innerText = user.username;
